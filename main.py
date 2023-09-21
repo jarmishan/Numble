@@ -11,8 +11,8 @@ screen = pygame.display.set_mode((600, 800))
 clock = pygame.time.Clock()
 FPS = 60
 
-background = pygame.image.load("Numble/assets/background.png")
-number_spritesheeet = Spritesheet("Numble/assets/numbers.png")
+background = pygame.image.load("assets/background.png")
+number_spritesheeet = Spritesheet("assets/numbers.png")
 
 
 class Game:
