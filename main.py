@@ -107,12 +107,12 @@ class Game:
     
     
     def _play_win_animation(self, surface):
-        f = lambda x: -x ** 2 + 36
+        f = lambda x: -x ** 2 + 30.25
         
         for i, image in enumerate(self.images[self.current_guess]):
             x_pos, y_pos = 114 + i * (self.IMAGE_SIZE + 6), 125 + self.current_guess * (self.IMAGE_SIZE + 10)
             
-            for j in range(-60, 60):
+            for j in range(-55, 55):
                 surface.fill((255, 255, 255))
                 surface.blit(background, (100, 25))
                 self._draw(surface)
